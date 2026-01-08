@@ -1,0 +1,17 @@
+[
+    {
+        "nome": "Severino Alves de Moura",
+        "cargo": "Assistente Administrativo",
+        "id_func": "1"
+    },
+    {
+        "nome": "Maria Pereira Souza",
+        "cargo": "Escriturária",
+        "id_func": "2"
+    },
+    {
+        "nome": "Raimundo José Cangaia",
+        "cargo": "Técnico de segurança do trabalho",
+        "id_func": "3"
+    }
+]

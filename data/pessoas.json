@@ -1,0 +1,14 @@
+[
+    {
+        "nome": "Luiz Gonzaga",
+        "tipo": "Física",
+        "cpf_cnpj": "93777777777777777",
+        "email": "gozagao@gmail.com"
+    },
+    {
+        "nome": "Maria Joaquina de Amaral Pereira Goes",
+        "tipo": "Física",
+        "cpf_cnpj": "46464661367486454",
+        "email": "mariagoes@gmail.com"
+    }
+]
