@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.classes import Pessoa, Conta
+from utils.classes import Pessoa, Conta,ContaCorrente,ContaPoupanca,ContaEspecial
 from utils.storage import carregar_pessoas, carregar_contas, salvar_contas
 
 st.title("3 — Cadastro de Contas")

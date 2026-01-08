@@ -119,3 +119,20 @@ class Conta:
             movimentos=d.get("movimentos", [])
         )
         return c
+class ContaCorrente(Conta):
+    def __init__(self, numero:int, titular_cpf_cnpj:str, saldo:float=0.0):
+        super().__init__(numero, titular_cpf_cnpj, tipo="corrente", saldo=saldo, limite=0.0)
+        # aplica tarifa inicial de R$50 (registrada)
+        self.saldo -= 50
+        self.registrar("Tarifa conta corrente", -50)
+
+class ContaPoupanca(Conta):
+    def __init__(self, numero:int, titular_cpf_cnpj:str, saldo:float=0.0):
+        super().__init__(numero, titular_cpf_cnpj, tipo="poupanca", saldo=saldo, limite=0.0)
+
+class ContaEspecial(Conta):
+    def __init__(self, numero:int, titular_cpf_cnpj:str, saldo:float=0.0, limite:float=500.0):
+        super().__init__(numero, titular_cpf_cnpj, tipo="especial", saldo=saldo, limite=limite)
+
+    def _pode_sacar(self, valor: float) -> bool:
+        return valor <= (self.saldo + self.limite)

@@ -1,0 +1,31 @@
+[
+    {
+        "numero": 1,
+        "titular_cpf_cnpj": "93777777777777777",
+        "tipo": "corrente",
+        "saldo": 10450.0,
+        "limite": 0.0,
+        "movimentos": [
+            {
+                "descricao": "Tarifa conta corrente",
+                "valor": -50,
+                "saldo_pos": 9950.0,
+                "timestamp": "2026-01-08T10:51:03.618224"
+            },
+            {
+                "descricao": "Depósito",
+                "valor": 500.0,
+                "saldo_pos": 10450.0,
+                "timestamp": "2026-01-08T10:53:29.086137"
+            }
+        ]
+    },
+    {
+        "numero": 2,
+        "titular_cpf_cnpj": "46464661367486454",
+        "tipo": "poupanca",
+        "saldo": 50000.0,
+        "limite": 0.0,
+        "movimentos": []
+    }
+]
